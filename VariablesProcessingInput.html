@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bills</title>
+</head>
+<body>
+<p class="FinalBill"></p>
+
+
+<script>
+       let userResponse = prompt("What is the value of your bill?")
+    let TaxedBill = userResponse * 1.07
+    let TipBill = TaxedBill * 1.15
+    alert("With a " + userResponse + " dollar bill, after tip and tax, your total is: $" + TipBill); 
+
+var FinalBillCost = document.querySelector(".FinalBill");
+
+FinalBillCost.innerText = "The Total Value of this bill is : " + TipBill;
+
+
+</script>
+</body>
+
+
+</html>
